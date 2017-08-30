@@ -101,6 +101,18 @@ input:focus:hover {
   color: #fff;
 }
 .result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #337733;
+  box-shadow: 0 0 15px #337733;
+  background: #fff;
+  color: #aaa;
+  height: 180px;
+  width: 300px;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  font-size: 0.7em;
   display: none;
 }
 .leave {
