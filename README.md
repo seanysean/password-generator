@@ -1,2 +1,2 @@
-# password-generator
+# Password generator
 Simple project
