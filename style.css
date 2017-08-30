@@ -95,7 +95,6 @@ input:focus:hover {
   padding: 5px;
   transition: 0.15s ease;
   cursor: pointer;
-  display: block;
 }
 .back:hover {
   background: #aaa;
@@ -116,9 +115,18 @@ input:focus:hover {
   font-size: 0.7em;
   display: none;
 }
+.result h1 {
+  margin: 5px;
+}
 .result #output {
   position: relative;
   top: 20px;
+  display: block;
+  margin: 5px auto 40px auto;
+  font-weight: 900;
+  font-family: monospace;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 .leave {
   left: 100%;
