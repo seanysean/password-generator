@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Lato:300');
+body {
+  background: #55A933;
+  color: #eee;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.3em;
+  overflow-x: hidden;
+}
+h1 {
+  font-weight: 100;
+}
+.slogan {
+  font-size: 15px;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  padding: 10px 5px;
+  margin: 30px auto;
+  width: auto;
+  font-weight: 100;
+  text-align: center;
+  transition: 0.25s ease;
+  will-change: transform;
+  outline: none;
+}
+input:hover {
+  border-color: #ccc;
+}
+input:focus {
+  box-shadow: 0 0 5px #36f;
+  border-bottom-color: transparent;
+  animation: 0.5s flash ease-in-out;
+}
+input:focus:hover {
+  box-shadow: 0 0 10px #37f;
+}
+.start {
+  padding: 10px;
+  min-width: 100px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  transition: 0.25s ease;
+}
+.start::before {
+  content: "";
+  border-right: 1px solid #fff;
+  height: 46px;
+  position: absolute;
+  width: 0;
+  margin-left: -11px;
+  margin-top: -11px;
+  pointer-events: none;
+  background: #fff;
+}
+.start:hover::before {
+  animation: 1s fancy ease;
+}
+.start:active {
+  box-shadow: 0 0 3px #000 inset;
+  background: #337733;
+}
+.start:active::before {
+  display: none;
+}
+.errormsg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #337733;
+  box-shadow: 0 0 15px #337733;
+  background: #fff;
+  color: #aaa;
+  height: 180px;
+  width: 300px;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  font-size: 0.7em;
+  display: none;
+}
+.startscreen {
+  transition: 1s ease;
+  position: relative;
+  left: 0;
+}
+.back {
+  border: 1px solid #aaa;
+  padding: 5px;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+.back:hover {
+  background: #aaa;
+  color: #fff;
+}
+.result {
+  display: none;
+}
+.leave {
+  left: 100%;
+}
+.join {
+  left: 0;
+}
+@keyframes flash {
+  0% {
+    background: transparent;
+    box-shadow: 0 0 0;
+  }
+  50% {
+    background: #fff;
+  }
+  75% {
+    box-shadow: 0 0 0;
+  }
+  100% {
+    background: transparent;
+    box-shadow: 0 0 5px #36f;
+  }
+}
+@keyframes fancy {
+  0% {
+    width: 0%;
+    background: #fff;
+  }
+  70% {
+    width: 104px;
+  }
+  100% {
+    background: transparent;
+  }
+}
